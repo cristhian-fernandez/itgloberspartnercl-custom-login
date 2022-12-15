@@ -1,0 +1,7 @@
+{
+    "custom-login": {
+        "component": "CustomLogin",
+        "composition": "children",
+        "render": "client"
+    }
+}
