@@ -65,5 +65,32 @@ Para agregar este componente custom, deberá ingresar en su proyecto, ir al arch
      "itgloberspartnercl.custom-login": "0.x"
   }
 ```
+
+Asi mismo en el código llamar al componente de la siguiente manera y colocar en children aquellos componentes que desea mostrar cuando el usuario va a loguearse. 
+
+```
+  {
+    "menu#header-login":{
+        "children": ["menu-item#header-login"]
+    },
+    "menu-item#header-login":{
+        "props": {...},
+        "blocks": ["submenu#header-login"]
+    },
+    "submenu#header-login":{
+        "children": ["custom-login"]
+    },
+    "custom-login":{
+        "children": ["modal-trigger#header__menu--trigger"]
+    },
+    "modal-trigger#header__menu--trigger":{
+        "children":[
+            "rich-text#header__menu--account",
+            "modal-layout#header__menu--login"
+        ]
+    }
+    ....
+  }
+```
 ## Contributors
 1. Cristhian Javier Fernández Cumbia
