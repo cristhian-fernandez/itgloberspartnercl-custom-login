@@ -3,7 +3,7 @@
   "name": "custom-login",
   "version": "0.0.1",
   "title": "Login Customizada",
-  "description": "Mostrar el login context o información del usuario dependiendo si esta logueado o no.",
+  "description": "Show the Login or user information depending on whether they are logged in or not.",
   "builders": {
     "react": "3.x",
     "messages": "1.x",
